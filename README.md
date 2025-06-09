@@ -137,3 +137,20 @@ ls
 cd deployment/
 ls
 java -jar ,press tab, 
+
+
+yaml script :
+
+ ---
+ - hosts: localhost
+   tasks:
+ - name: Ensure deployment directory exists
+  file:
+  path: /home/ronnie/deployment
+  state: directory
+  mode: '0755'
+
+  - name: Copy the JAR file to the deployment folder
+   copy:
+   src: /home/ronnie/deployment/*.jar
+   dest: /home/ronnie/deployment/
