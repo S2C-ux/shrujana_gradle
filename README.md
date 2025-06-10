@@ -1,3 +1,7 @@
+p5 if I not get password do this 
+ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
 P7---
 
 open Ubuntu 
